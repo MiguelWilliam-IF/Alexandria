@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Yatra+One&display=swap');
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('fontes/JMH Typewriter.otf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,15 +26,18 @@ body {
 }
 
 .header h1 {
-    padding: 10px 20px 10px 20px;
-    color: white;
-    font-family: 'Times New Roman';
+    padding: 5px 20px 5px 20px;
+    color: aliceblue;
+    font-family: 'Typewriter';
+    font-weight: 100;
+    font-size: 35px;
     letter-spacing: 3px;
 }
 
 .header form {
     display: flex;
     padding: 10px 20px 10px 20px;
+    max-height: 30PX;
 }
 
 .navbar {
@@ -46,9 +57,43 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: white;
+    color: aliceblue;
 }
 
 .navbar a:hover {
     text-decoration: underline;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.destaque-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f4d4d;
+    padding: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.destaque-container h2 {
+    font-family: 'Times New Roman';
+    font-weight: lighter;
+    margin: 0 0 10px 0;
+}
+
+.destaque-container p {
+    align-self: self-end;
+    max-width: 80%;
+    text-align: right;
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.descricao-container {
+    color: #1f4d4d;
 }
