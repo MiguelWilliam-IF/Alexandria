@@ -1,3 +1,14 @@
+/*
+CORES:
+#f5fffd - Branco ( para fundos )
+#1f4d4d - Verde
+#f0f8ff - Branco ( para textos )
+*/
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Yatra+One&display=swap');
 
@@ -9,7 +20,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", "Droid Sans", "Calibri", sans-serif;
+    font-family: "Century Gothic", "Open Sans", "Droid Sans", "Calibri", sans-serif;
 }
 
 body {
@@ -27,33 +38,47 @@ body {
 
 .header h1 {
     padding: 5px 20px 5px 20px;
-    color: aliceblue;
+    color: #f0f8ff;
     font-family: 'Typewriter';
     font-weight: 100;
     font-size: 35px;
     letter-spacing: 3px;
 }
 
-#divBusca{
-    background-color:#2F4F4F;
-    border:solid 1px;
-    border-radius:15px;
-    width:300px;
+.divBusca {
+    background-color: #2F4F4F;
+    border: solid 1px;
+    border-radius: 15px;
     height: 40px; 
-    
-  }
+    margin: 10px 20px;
+}
   
-  #txtBusca{
-    float:left;
-    background-color:transparent;
-    font-style:italic;
-    font-size:18px;
-    border:none;
+input#txtBusca{
+    width: 300px;
+    background-color: transparent;
+    background-image: url("img/pngwing.com.png");
+    background-repeat: no-repeat;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
     display: flex;
     padding: 10px 20px 10px 20px;
-    max-height: 20PX;
-  }
+    max-height: 30px;
+    color: #f0f8ff;
+}
 
+::placeholder {
+    color: #f0f8ff;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #f0f8ff;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
 
 .navbar {
     flex-basis: 100%;
@@ -73,7 +98,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 .navbar a:hover {
@@ -93,13 +118,17 @@ main {
     background-color: #1f4d4d;
     padding: 10px;
     border-radius: 20px;
-    color: aliceblue;
+    width: 220px;
+    color: #f0f8ff;
 }
 
 .destaque-container h2 {
-    font-family: 'Times New Roman';
+    font-family: 'Typewriter';
+    font-size: 1em;
+    letter-spacing: 2px;
     font-weight: lighter;
     margin: 0 0 10px 0;
+    text-align: center;
 }
 
 .destaque-container p {
@@ -112,4 +141,43 @@ main {
 
 .descricao-container {
     color: #1f4d4d;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    height: fit-content;
+    justify-content: center;
+}
+
+.descricao-container h2 {
+    font-family: 'Typewriter';
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.descricao-container p {
+    font-size: 1.3em;
+    flex-basis: 70%;
+    align-self: center;
+}
+
+.descricao-container button {
+    padding: 10px;
+    background-color: #2F4F4F;
+    margin: 0 20px;
+    border: none;
+    border-radius: 30px;
+    color: #f0f8ff;
+}
+
+.descricao-container button:hover {
+    cursor: pointer;
+}
+
+.descricao-container button p {
+    font-size: 1em;
+}
+
+.descricao-container button strong {
+    color: #fff6d3;
+    font-style: italic;
 }
