@@ -1,0 +1,106 @@
+/*
+CORES:
+#f5fffd - Branco ( para fundos )
+#1f4d4d - Verde
+#f0f8ff - Branco ( para textos )
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Yatra+One&display=swap');
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('../fontes/JMH Typewriter.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", "Open Sans", "Droid Sans", "Calibri", sans-serif;
+}
+
+body {
+    background-color: #f5fffd;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #1f4d4d;
+    justify-content: space-between;
+}
+
+.header h1 {
+    padding: 5px 20px 5px 20px;
+    color: #f0f8ff;
+    font-family: 'Typewriter';
+    font-weight: 100;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.divBusca {
+    background-color: #2F4F4F;
+    border: solid 1px;
+    border-radius: 15px;
+    height: 40px; 
+    margin: 10px 20px;
+}
+  
+input#txtBusca{
+    width: 300px;
+    background-color: transparent;
+    background-image: url("img/pngwing.com.png");
+    background-repeat: no-repeat;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    max-height: 30px;
+    color: #f0f8ff;
+}
+
+::placeholder {
+    color: #f0f8ff;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #f0f8ff;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.navbar {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+  
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* FIM DA ESTILIZAÇÃO DO HEADER */

@@ -1,0 +1,245 @@
+/*
+CORES:
+#f5fffd - Branco ( para fundos )
+#1f4d4d - Verde
+#f0f8ff - Branco ( para textos )
+#7c3f58 - Roxo
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('../fontes/JMH Typewriter.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Century Gothic", "Open Sans", "Droid Sans", "Calibri", sans-serif;
+}
+
+body {
+    background-color: #f5fffd;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #1f4d4d;
+    justify-content: space-between;
+}
+
+.header h1 {
+    padding: 5px 20px 5px 20px;
+    color: #f0f8ff;
+    font-family: 'Typewriter';
+    font-weight: 100;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.divBusca {
+    background-color: #2F4F4F;
+    border: solid 1px;
+    border-radius: 15px;
+    height: 40px; 
+    margin: 10px 20px;
+}
+  
+input#txtBusca{
+    width: 300px;
+    background-color: transparent;
+    background-image: url("img/pngwing.com.png");
+    background-repeat: no-repeat;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    max-height: 30px;
+    color: #f0f8ff;
+}
+
+::placeholder {
+    color: #f0f8ff;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #f0f8ff;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.navbar {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+  
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* FIM DA ESTILIZAÇÃO DO HEADER */
+
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainAcervo-container {
+    display: flex;
+    width: 60vw;
+    height: fit-content;
+}
+
+.mainAcervo-container * {
+    margin: 0 10px;
+}
+
+.mainAcervo-container .img-box {
+    padding: 4px;
+    background-color: #1f4d4d;
+    border-radius: 10px;
+    height: 320px;
+
+    display: flex;
+    align-items: center;
+}
+
+.img-box img {
+    height: 300px;
+}
+
+.info-box {
+    color: #1f4d4d;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.info-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+}
+
+.info-box .autoria {
+    color: #7c3f58;
+    text-decoration: underline;
+    font-style: italic;
+    flex-basis: 100%;
+}
+
+.info-box .desc-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.info-box .desc-principal p {
+    margin: 0;
+}
+
+.info-box button {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    background-color: #2F4F4F;
+    margin: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    color: #f0f8ff;
+
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+}
+
+.info-box button svg {
+    height: 25px;
+}
+
+
+.info-box button:hover {
+    cursor: pointer;
+}
+
+.info-box button p {
+    font-size: 1em;
+}
+
+.info-box button strong {
+    color: #fff6d3;
+    font-style: italic;
+}
+
+.info-box .compra {
+    flex-basis: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sideAcervo-container {
+    color: #7c3f58;
+    border-left: 2px solid #7c3f58;
+    width: 30vw;
+
+    padding-left: 40px;
+}
+
+.sideAcervo-container h2 {
+    color: #1f4d4d;
+    font-weight: normal;
+}
+
+.livro {
+    display: flex;
+}
+
+.livro * {
+    margin: 5px;
+}
+
+.livro img {
+    height: 200px;
+    border-radius: 4px;
+}
+
+.livro .desc-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.livro .desc-side p:nth-of-type(2){
+    align-self: flex-end;
+}

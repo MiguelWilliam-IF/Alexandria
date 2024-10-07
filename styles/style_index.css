@@ -7,14 +7,12 @@ CORES:
 
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Yatra+One&display=swap');
 
 @font-face {
     font-family: 'Typewriter';
-    src: url('fontes/JMH Typewriter.otf') format('opentype');
+    src: url('../fontes/JMH Typewriter.otf') format('opentype');
 }
 
 * {
@@ -104,6 +102,8 @@ textarea:focus, input:focus{
 .navbar a:hover {
     text-decoration: underline;
 }
+
+/* FIM DA ESTILIZAÇÃO DO HEADER */
 
 main {
     margin-top: 40px;
