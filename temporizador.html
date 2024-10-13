@@ -25,48 +25,47 @@
      <main>
      <div class="ciclos-container">
         <h2>Ciclos</h2>
-        <img height="50px" src="img/tomato.svg" alt="tomate"> <!-- MUDAR A COR NO CSS -->
-        <img height="50px" src="img/tomato.svg" alt="tomate">
-        <img height="50px" src="img/tomato.svg" alt="tomate">
-        <img height="50px" src="img/tomato.svg" alt="tomate">
+
+        <div class="tomates-ciclos">
+            <img height="45px" src="img/tomato-purple.svg" alt="tomate">
+            <img height="45px" src="img/tomato-purple.svg" alt="tomate">
+            <img height="45px" src="img/tomato-orange.svg" alt="tomate">
+            <img height="45px" src="img/tomato-green.svg" alt="tomate"> 
+        </div>
+        
         <p>*A cada 4 ciclos, uma pausa longa!</p>
-        <hr>
+
         <p>Ciclo atual > <strong>3°</strong></p>
      </div>
      <div class="mainPomodoro-container">
         <h2>Pomodoro</h2>
-        <!-- <img height="300px" src="img/relogio.jpg" alt="relogio"> -->
+        
         <div class="temporizador">
             <p>Temporizador (em construção)</p>
         </div>
-        <button><p>Iniciar</p></button>
-        <button><p>Parar</p></button>
-        <button><p>Reiniciar</p></button>
+
+        <div class="buttons-container">
+            <button>Iniciar</button>
+            <button>Parar</button>
+            <button>Reiniciar</button>
+        </div>
+        
         <p><strong>Pomodoro:</strong> divida seu estudo em ciclos! Concentre-se totalmente durante 25 minutos, e depois tire uma pausa.</p>
     </div>
+
     <div class="notaPomodoro-container">
-        <table>
-            <thead>
-            <tr>
-                <th>Notas</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>linha 1</td>
-                    
-                </tr>
-                <tr>
-                    <td>linha 2</td>
-                </tr>
-                <tr>
-                    <td>linha 3</td>
-                </tr>
-                <tr>
-                    <td>linha 4</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="mainNotas-container">
+            <h2>Lista de tarefas</h2>
+                <div class="tarefas-container">
+                <form action="addTarefa">
+                    <input type="text">
+                </form>
+                <ul>
+                    <li>tarefa 1 <button>concluir</button> <button>deletar</button></li>
+                    <li>tarefa 2 <button>concluir</button> <button>deletar</button></li>
+                </ul>
+        </div>
+    </div>
     </div>
     </main>
 

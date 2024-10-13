@@ -4,6 +4,7 @@ CORES:
 #1f4d4d - Verde
 #f0f8ff - Branco ( para textos )
 #7c3f58 - Roxo
+#f9a875 - Laranja
 */
 
 
@@ -145,7 +146,7 @@ main {
 }
 
 .info-box h2 {
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom: 10px;
     flex-basis: 100%;
 }
@@ -181,21 +182,17 @@ main {
     color: #f0f8ff;
 
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.7em;
     letter-spacing: 2px;
 }
 
 .info-box button svg {
-    height: 25px;
+    height: 20px;
 }
 
 
 .info-box button:hover {
     cursor: pointer;
-}
-
-.info-box button p {
-    font-size: 1em;
 }
 
 .info-box button strong {

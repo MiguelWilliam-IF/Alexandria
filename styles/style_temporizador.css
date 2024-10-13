@@ -4,6 +4,7 @@ CORES:
 #1f4d4d - Verde
 #f0f8ff - Branco ( para textos )
 #7c3f58 - Roxo
+#f9a875 - Laranja
 */
 
 
@@ -20,7 +21,7 @@ CORES:
 * {
     margin: 0;
     padding: 0;
-    font-family: "Century Gothic", "Open Sans", "Droid Sans", "Calibri", sans-serif;
+    font-family: "Poppins", "Century Gothic", "Open Sans", "Droid Sans", "Calibri", sans-serif;
 }
 
 body {
@@ -115,12 +116,122 @@ main {
 
 .ciclos-container {
     flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.ciclos-container h2 {
+    flex-basis: 100%;
+    text-align: center;
+    color: #1f4d4d;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.tomates-ciclos {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tomates-ciclos img {
+    margin: 4px;
+}
+
+.ciclos-container p:nth-of-type(1) {
+    flex-basis: 100%;
+    text-align: center;
+    color: #1f4d4d;
+    font-size: 0.8em;
+}
+
+.ciclos-container p:nth-of-type(2) {
+    text-align: center;
+    color: #1f4d4d;
+    border-top: 1px dotted #1f4d4d;
+    margin: 10px auto 0 auto;
 }
 
 .mainPomodoro-container {
     flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainPomodoro-container h2 {
+    flex-basis: 100%;
+    text-align: center;
+    color: #1f4d4d;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: light;
+}
+
+.mainPomodoro-container .temporizador {
+    flex-basis: 100%;
+}
+
+.mainPomodoro-container .buttons-container {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    background-color: #2F4F4F;
+    margin: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    color: #f0f8ff;
+
+    font-weight: bold;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+
+    height: fit-content;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.mainPomodoro-container p {
+    color: #1f4d4d;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
 }
 
 .notaPomodoro-container {
     flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.mainNotas-container {
+    background-color: #1f4d4d;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 0 20px;
+    max-width: 250px;
+    height: fit-content;
+}
+
+.mainNotas-container h2 {
+    color: #f0f8ff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.mainNotas-container .tarefas-container {
+    background-color: #fff6d3;
+    min-height: 150px;
+    border-radius: 30px;
+    margin-top: 10px;
 }
