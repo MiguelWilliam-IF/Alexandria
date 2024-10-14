@@ -123,6 +123,7 @@ main {
     border-radius: 20px;
     width: 220px;
     color: #f0f8ff;
+    height: fit-content;
 }
 
 .destaque-container h2 {
